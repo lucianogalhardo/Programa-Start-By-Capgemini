@@ -18,7 +18,7 @@ public class App {
         Connection c = ConecctionFactory.getConnection();
         
         
-        Project project = new Project(1, "Projeto Teste", "Descrição teste", "", Calendar.getInstance().getTime(), Calendar.getInstance().getTime());
+        Project project = new Project(2, "Projeto Teste 02", "Descrição teste 02", "", Calendar.getInstance().getTime(), Calendar.getInstance().getTime());
         projecController.save(project);
         
         ConecctionFactory.closeConnection(c);
