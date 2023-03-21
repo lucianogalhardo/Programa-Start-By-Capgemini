@@ -92,7 +92,7 @@ public class ProjecController {
             }
     }
     
-    public void removeById(Int idProjec){
+    public void removeById(int idProjec){
         
         String sql = "DELETE FROM projects WHERE id = ?";
         

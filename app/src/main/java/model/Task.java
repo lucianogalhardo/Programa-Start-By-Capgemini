@@ -16,13 +16,13 @@ public class Task {
     private int idProjetc;
     private String name;
     private String description;
-    private String isCompleted;
+    private Boolean isCompleted;
     private String notes;
     private Date deadline;
     private Date createdAt;
     private Date updatedAt;
 
-    public Task(int id, int idProjetc, String name, String description, String isCompleted, String notes, Date deadline, Date createdAt, Date updatedAt) {
+    public Task(int id, int idProjetc, String name, String description, Boolean isCompleted, String notes, Date deadline, Date createdAt, Date updatedAt) {
         this.id = id;
         this.idProjetc = idProjetc;
         this.name = name;
@@ -35,12 +35,12 @@ public class Task {
     }
     
     public Task(){
-        this.getCreatedAt = new Date();
+        this.createdAt = new Date();
     }
 
-    public Task() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+//    /*public Task() {
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+//    }/
 
     public int getId() {
         return id;
@@ -74,11 +74,11 @@ public class Task {
         this.description = description;
     }
 
-    public String getIsCompleted() {
+    public Boolean isCompleted() {
         return isCompleted;
     }
 
-    public void setIsCompleted(String isCompleted) {
+    public void setIsCompleted(Boolean isCompleted) {
         this.isCompleted = isCompleted;
     }
 

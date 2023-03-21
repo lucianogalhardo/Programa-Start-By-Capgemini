@@ -21,10 +21,10 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
     
     //  https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    compile group: 'mysql', name: 'mysql-connector-java', version '5.1.13'
-    
-    
-
+    //compile group: 'mysql', name: 'mysql-connector-java', version '5.1.13'
+    //implementation group: 'mysql', name: 'mysql-connector-java', version:�'5.1.6'
+    //implementation("mysql:mysql-connector-java:5.1.13")    
+    implementation 'mysql:mysql-connector-java:5.1.13'   
     
     
 

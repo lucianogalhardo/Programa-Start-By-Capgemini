@@ -5,26 +5,22 @@ package TodoApp;
 
 import controller.ProjecController;
 import java.sql.Connection;
+import java.util.Calendar;
 import model.Project;
 import util.ConecctionFactory;
 
 public class App {
 
-    private static Object projecController;
+    private static ProjecController projecController = new ProjecController();
     
     public static void main(String[] args) {
         
         Connection c = ConecctionFactory.getConnection();
         
+        
+        Project project = new Project(1, "Projeto Teste", "Descrição teste", "", Calendar.getInstance().getTime(), Calendar.getInstance().getTime());
+        projecController.save(project);
+        
         ConecctionFactory.closeConnection(c);
-        
-        
-        Project project = new Project();
-        project.setName("Projeto teste");
-        project.setDescription("Descrição teste");
-        
-        ProjecController.save(Project);
-        
-        
     }
 }
