@@ -18,12 +18,12 @@ public class App {
         Connection c = ConecctionFactory.getConnection();
         
         
-        Project project = new Project(3, "Projeto Teste 03",
-                 "Descrição teste 03", "",
-                Calendar.getInstance().getTime(),
-                Calendar.getInstance().getTime());
-        
-        projecController.save(project);
+//        Project project = new Project(3, "Projeto Teste 03",
+//                 "Descrição teste 03", "",
+//                Calendar.getInstance().getTime(),
+//                Calendar.getInstance().getTime());
+//        
+//        projecController.save(project);
         ConecctionFactory.closeConnection(c);
     }
 }
